@@ -3,8 +3,8 @@ steps:
   args: ['install']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/pork-merchant/javaimage:v1', '.']
-  images:
-  - 'us-central1-docker.pkg.dev/pork-merchant/javaimage:v1'
+  # images:
+  # - 'us-central1-docker.pkg.dev/pork-merchant/javaimage:v1'
 logsBucket: 'gs://artifacts.pork-merchant.appspot.com'
 options:
   logging: CLOUD_LOGGING_ONLY
