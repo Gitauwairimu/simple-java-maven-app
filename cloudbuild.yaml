@@ -2,6 +2,6 @@ steps:
 # - name: 'gcr.io/cloud-builders/mvn'
 #   args: ['install']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/pork-merchant/mvnJavaImage', '.']
+  args: ['build', '-t', 'gcr.io/pork-merchant/javaImage', '.']
 options:
   logging: CLOUD_LOGGING_ONLY
